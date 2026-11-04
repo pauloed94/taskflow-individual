@@ -12,3 +12,5 @@
 *.png binary
 *.jpg binary
 *.mp4 binary
+Dockerfile text eol=lf
+.dockerignore text eol=lf
