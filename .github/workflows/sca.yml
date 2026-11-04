@@ -1,5 +1,5 @@
 name: SCA
-run-name: "SCA · ${{ github.event_name }} ${{ github.event.action }} · ${{ github.head_ref || github.ref_name }}"
+run-name: "SCA · ${{ github.event.action == 'opened' && 'PR aberto' || github.event.action == 'synchronize' && 'commit novo no PR' || github.event_name }} · ${{ github.head_ref || github.ref_name }}"
 
 on:
   pull_request:
